@@ -1,0 +1,46 @@
+body{
+  font-family: Tahoma;
+  color: #444;
+  letter-spacing: 1px;
+}
+.navWrapper{
+  width: 100vw;
+  background-color: bisque;
+}
+
+.navBar{
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  height: 50px;
+}
+
+.navBar ul a{
+  text-decoration: none;
+  color: black;
+}
+
+.navBar ul li{
+  list-style: none;
+}
+
+.navBar ul{
+  width: 30vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navBar button{
+  width: 70px;
+  height: 30px;
+}
+.logo{
+  width: 60px;
+  height: 60px;
+}
+.main_wrapper{
+  display: flex;
+  justify-content: center;
+}
