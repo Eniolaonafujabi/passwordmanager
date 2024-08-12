@@ -51,8 +51,10 @@ body{
 }
 .holder{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
 }
-.holder div{
-  width: 50vw;
+.funtionality{
+  width: 30vw;
+  height: 20vh;
 }
