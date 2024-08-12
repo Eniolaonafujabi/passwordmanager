@@ -49,3 +49,10 @@ body{
   align-items: center;
   margin: auto;
 }
+.holder{
+  display: flex;
+  flex-direction: column;
+}
+.holder div{
+  width: 50vw;
+}
