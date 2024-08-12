@@ -6,6 +6,7 @@ body{
 .navWrapper{
   width: 100vw;
   background-color: bisque;
+  margin-bottom: 60px;
 }
 
 .navBar{
@@ -42,5 +43,9 @@ body{
 }
 .main_wrapper{
   display: flex;
-  justify-content: center;
+  border: 2px solid black;
+  width: 20vw;
+  height: 25vh;
+  align-items: center;
+  margin: auto;
 }
