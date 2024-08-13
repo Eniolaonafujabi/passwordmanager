@@ -44,8 +44,8 @@ body{
 .main_wrapper{
   display: flex;
   border: 2px solid black;
-  width: 20vw;
-  height: 25vh;
+  width: 40vw;
+  height: 50vh;
   align-items: center;
   margin: auto;
 }
@@ -57,4 +57,29 @@ body{
 .funtionality{
   width: 30vw;
   height: 20vh;
+}
+.submit-button{
+  width: 30vw;
+  border-radius: 10px;
+  box-shadow: inset  5px 5px 10px rgba(0, 0, 0, 0.10);
+}
+.submit-button :hover{
+  background-color: green;
+  color: yellow;
+}
+.form input {
+  width: 30vw;
+}
+.form{
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 }
