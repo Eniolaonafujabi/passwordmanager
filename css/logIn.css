@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.mainwrapper{
+  border: 5px solid #000;
+  width: 50vw;
+  margin: auto;
+  height: 30vh;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: inherit;
+}
+.submitbutton{
+  color: white;
+  background: #6262b6;
+  border: none;
+  width: 30%;
+  height: 80%;
+  cursor: pointer;
+  box-shadow: 1px 0px 4px black;
+}
+.submitbutton:hover{
+  background: white;
+  color: black;
+}
