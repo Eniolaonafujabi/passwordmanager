@@ -38,12 +38,12 @@ body{
   height: 30px;
 }
 .logo{
-  width: 60px;
+  width: 40px;
   height: 60px;
 }
 .main_wrapper{
   display: flex;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   width: 40vw;
   height: 50vh;
   align-items: center;
@@ -52,34 +52,32 @@ body{
 .holder{
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: inherit;
+  /*align-items: center;*/
+}
+.create_accountImage{
+  width: 30vw;
+  height: 40vh;
 }
 .funtionality{
   width: 30vw;
   height: 20vh;
 }
-.submit-button{
+.submit-button {
   width: 30vw;
   border-radius: 10px;
   box-shadow: inset  5px 5px 10px rgba(0, 0, 0, 0.10);
-}
-.submit-button :hover{
-  background-color: green;
-  color: yellow;
+  border: none;
+  height: 10%;
 }
 .form input {
   width: 30vw;
+  height: 6vh;
+  border-radius: 10px;
 }
-.form{
+.form {
   justify-content: space-between;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-}
-.input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
+  gap: 10px;
 }
