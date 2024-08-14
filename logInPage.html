@@ -3,31 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <title>LogIn</title>
+  <link rel="stylesheet" href="css/logIn.css">
 </head>
 <body>
-<div class="mainwrapper">
-  <form action="#" class="form">
+<div class="login_nav_wrapper">
+  <div class="login_nav_bar">
+    <p>Password Management</p>
+    <img src="./img/images.png" class="login_logo">
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <button class="login_Btn">Create Account</button>
+  </div>
+</div>
+<div class="login_holder">
+  <img src="img/passwordlogin.webp" class="password_login_img">
+  <div class="main_wrapper_login">
+    <h3>Password Manager</h3>
 
-    <div class="email>">
-      <label class="Email">Email: </label>
-      <input placeholder="Email" type="text">
-    </div>
+    <form action="#" class="form">
 
-    <div class="phoneNumber">
-      <label class="phone_number">Last Name: </label>
-      <input placeholder="Phone Number" type="text">
-    </div>
+      <div class="login_email>">
+        <!--      <label class="Email">Email: </label>-->
+        <input placeholder="Email" type="text">
+      </div>
 
-    <div class="password">
-      <label class="pass_word">password: </label>
-      <input placeholder="password" type="password">
-    </div>
+      <div class="login_phoneNumber">
+        <!--      <label class="phone_number">Last Name: </label>-->
+        <input placeholder="Phone Number" type="text">
+      </div>
 
-    <div>
-      <button class="submitbutton">submit</button>
-    </div>
+      <div class="login_password">
+        <!--      <label class="pass_word">password: </label>-->
+        <input placeholder="password" type="password">
+      </div>
 
-  </form>
+      <div>
+        <button class="login_submit_button">submit</button>
+      </div>
+
+    </form>
+  </div>
 </div>
 <script src="./css/logIn.css"></script>
 </body>
