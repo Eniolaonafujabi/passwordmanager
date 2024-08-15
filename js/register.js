@@ -1,9 +1,7 @@
-BASE_URL = "/api/user/";
-Register_Api = "registerUser";
-
+const BASE_URL = "http://localhost:8080/api/user/registerUser";
 const form = document.querySelector(".form");
 
-form.addEventListener("submit", function (event) {
+form.addEventListener("submit", async (event)  => {
   event.preventDefault();
   const emailValue = document.querySelector('.emailInput').value;
   // console.log(emailValue);
@@ -13,19 +11,20 @@ form.addEventListener("submit", function (event) {
 
   const collectPassword = document.querySelector('.passWordInput').value;
   // console.log(collectPassword);
-})
 
-// const registerUser = async (url)=>{
-//   try{
-//     const response = await fetch(url);
-//     if(!response.ok){
-//       throw new Error(`Error: ${response.statusText}`);
-//     };
-//     const data = await response.json();
-//
-//     console.log(data);
-//   }catch (error){
-//     console.log(error);
-//   }
-// }
+  const data = await fetch(BASE_URL, {
+    method: "POST",
+    headers:{
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({email:emailValue, phoneNumber:collectPhoneNumber,password:collectPassword})
+  })
+  console.log(data);
+    if(data.ok){
+      alert("Successfully registered!")
+      window.location.href = "logInPage.html";
+    }else {
+      console.log(data.status)
+    }
+})
 

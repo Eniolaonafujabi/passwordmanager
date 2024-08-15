@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>LogIn</title>
-  <link rel="stylesheet" href="css/logIn.css">
+  <link rel="stylesheet" href="./css/logIn.css">
 </head>
 <body>
 <div class="login_nav_wrapper">
@@ -14,7 +14,7 @@
       <li><a href="#">About Us</a></li>
       <li><a href="#">Contact Us</a></li>
     </ul>
-    <button class="login_Btn">Create Account</button>
+    <button class="login_Btn" onclick="window.location.href='register.html'">Create Account</button>
   </div>
 </div>
 <div class="login_holder">
@@ -22,21 +22,17 @@
   <div class="main_wrapper_login">
     <h3>Password Manager</h3>
 
-    <form action="#" class="form">
+    <form action="#" class="logInForm">
 
       <div class="login_email>">
         <!--      <label class="Email">Email: </label>-->
-        <input placeholder="Email" type="text">
+        <input placeholder="Email" type="email" class="logInEmail">
       </div>
 
-      <div class="login_phoneNumber">
-        <!--      <label class="phone_number">Last Name: </label>-->
-        <input placeholder="Phone Number" type="text">
-      </div>
 
       <div class="login_password">
         <!--      <label class="pass_word">password: </label>-->
-        <input placeholder="password" type="password">
+        <input placeholder="password" type="password" class="logInPassword">
       </div>
 
       <div>
@@ -46,6 +42,6 @@
     </form>
   </div>
 </div>
-<script src="./css/logIn.css"></script>
+<script src="/js/logIn.js"></script>
 </body>
 </html>
