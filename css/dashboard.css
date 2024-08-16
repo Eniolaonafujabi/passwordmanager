@@ -1,0 +1,19 @@
+body{
+  font-family: Tahoma;
+  color: #444;
+  letter-spacing: 1px;
+}
+.company_name{
+  width: 100vw;
+  background-color: rgb(27,38,79);
+}
+.management{
+  color: lightblue;
+}
+.company_name{
+  color: white;
+}
+.company_name ul button img{
+  width: 1vw;
+  height: 2vh;
+}

@@ -4,13 +4,13 @@ const form = document.querySelector(".form");
 form.addEventListener("submit", async (event)  => {
   event.preventDefault();
   const emailValue = document.querySelector('.emailInput').value;
-  // console.log(emailValue);
+  console.log(emailValue);
 
   const collectPhoneNumber= document.querySelector('.phoneNumberInput').value;
-  // console.log(collectPhoneNumber);
+  console.log(collectPhoneNumber);
 
   const collectPassword = document.querySelector('.passWordInput').value;
-  // console.log(collectPassword);
+  console.log(collectPassword);
 
   const data = await fetch(BASE_URL, {
     method: "POST",

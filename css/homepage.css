@@ -1,0 +1,41 @@
+body{
+  background-image: url("img/Self-hosted-Password-Manager.jpg");
+}
+.navWrapper{
+  width: 100vw;
+  background-color: bisque;
+  margin-bottom: 60px;
+}
+
+.navBar{
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  height: 50px;
+}
+
+.navBar ul a{
+  text-decoration: none;
+  color: black;
+}
+
+.navBar ul li{
+  list-style: none;
+}
+
+/*.navBar ul{*/
+/*  width: 30vw;*/
+/*  display: flex;*/
+/*  justify-content: space-around;*/
+/*}*/
+
+/*.navBar button{*/
+/*  width: 70px;*/
+/*  height: 30px;*/
+/*}*/
+/*.logo{*/
+/*  width: 40px;*/
+/*  height: 60px;*/
+/*}*/
