@@ -8,31 +8,69 @@
 </head>
 <body>
 <div class="user_header">
-  <div class="sidebar">
-    <div class="companyName">
-      <h3>Password Management</h3>
+  <div class="boardBody">
+    <div class="sidebar">
+      <div class="companyName">
+        <h3>Password Management</h3>
+      </div>
+      <button class="options">
+        <div class="icon">
+          <!-- Material Icon -->
+          <i class="material-icons">lock_open</i>
+        </div>
+        <div> Add password</div>
+      </button>
+      <button class="options">
+        <div class="icon">
+          <!-- Material Icon -->
+          <i class="material-icons">location_city</i>
+        </div>
+        <div>Add address</div>
+      </button>
+      <button class="options">
+        <div class="icon">
+          <!-- Material Icon -->
+          <i class="material-icons">event_note</i>
+        </div>
+        <div>Add Note</div>
+      </button>
     </div>
-    <button class="options">
-      <div class="icon">
-        <!-- Material Icon -->
-        <i class="material-icons">lock_open</i>
-      </div>
-      <div> Add password</div>
-    </button>
-    <button class="options">
-      <div class="icon">
-        <!-- Material Icon -->
-        <i class="material-icons">location_city</i>
-      </div>
-      <div>Add address</div>
-    </button>
-    <button class="options">
-      <div class="icon">
-        <!-- Material Icon -->
-        <i class="material-icons">event_note</i>
-      </div>
-      <div>Add Note</div>
-    </button>
+    <div class="board">
+      <form class="securePasswordForm">
+        <div>
+          <h2>Save Password</h2>
+        </div>
+        <div>
+          <label class="email">
+            Email:
+            <input placeholder="Email" type="email" class="emailInput">
+          </label>
+        </div>
+        <div>
+          <label class="userName">
+            UserName:
+            <input placeholder="UserName" type="text" class="userNameInput">
+          </label>
+        </div>
+        <div>
+          <label class="websiteLink">
+            websiteLink:
+            <input placeholder="websiteLink" type="text" class="websiteLinkInput">
+          </label>
+        </div>
+        <div>
+          <label class="password">
+            password:
+            <input placeholder="password" type="password" class="password">
+          </label>
+        </div>
+        <div>
+          <button class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
 <script src="/js/dashboard.js"></script>

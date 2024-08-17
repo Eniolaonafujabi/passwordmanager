@@ -27,6 +27,7 @@
   border: none;
   align-items: center;
   background: none;
+  padding: 20px;
 }
 .options:hover{
   border-radius: 40px;
@@ -39,6 +40,51 @@
 .icon {
   size: 48px;
   color: black;
+}
+.board{
+  width: 1000px;
+  height: 610px;
+  background: white;
+  border-radius: 20px;
+  border: solid 2px whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boardBody{
+  display: flex;
+  gap: 10px;
+}
+
+.securePasswordForm{
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.securePasswordForm input {
+  width: 30vw;
+  height: 6vh;
+  border-radius: 10px;
+  background-color: #888888;
+  border: none;
+}
+.holdingForm{
+  display: flex;
+  border: 2px solid black;
+  width: 40vw;
+  height: 50vh;
+  align-items: center;
+  margin: auto;
+  gap: 2px;
+}
+.securePasswordForm button{
+  width: 20vw;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  height: 10%;
+  margin-left: 60px;
 }
 
 
