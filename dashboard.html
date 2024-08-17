@@ -4,18 +4,38 @@
   <meta charset="UTF-8">
   <title>DashBoard</title>
   <link rel="stylesheet" href="/css/dashboard.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
 <div class="user_header">
-  <div class="company_name">
-    <h2><b>Password <span class="management">Management</span></b></h2>
-    <ul>
-      <button><img src="img/createPassword.jpeg" alt="passwordLock"></button>
-      <button><img src="img/note.jpeg" alt="note"></button>
-      <button><img src="img/address(1).png" alt="address"></button>
-    </ul>
+  <div class="sidebar">
+    <div class="companyName">
+      <h3>Password Management</h3>
+    </div>
+    <button class="options">
+      <div class="icon">
+        <!-- Material Icon -->
+        <i class="material-icons">lock_open</i>
+      </div>
+      <div> Add password</div>
+    </button>
+    <button class="options">
+      <div class="icon">
+        <!-- Material Icon -->
+        <i class="material-icons">location_city</i>
+      </div>
+      <div>Add address</div>
+    </button>
+    <button class="options">
+      <div class="icon">
+        <!-- Material Icon -->
+        <i class="material-icons">event_note</i>
+      </div>
+      <div>Add Note</div>
+    </button>
   </div>
 </div>
 <script src="/js/dashboard.js"></script>
 </body>
 </html>
+
