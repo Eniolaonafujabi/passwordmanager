@@ -56,13 +56,13 @@
   gap: 10px;
 }
 
-.securePasswordForm{
+.secureNoteForm{
   justify-content: space-between;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.securePasswordForm input {
+.secureNoteForm input {
   width: 30vw;
   height: 6vh;
   border-radius: 10px;
@@ -78,7 +78,7 @@
   margin: auto;
   gap: 2px;
 }
-.securePasswordForm button{
+.secureNoteForm button{
   width: 20vw;
   border-radius: 10px;
   cursor: pointer;

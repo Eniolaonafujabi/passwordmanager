@@ -17,11 +17,12 @@ form.addEventListener("submit", async (e) => {
   })
   const response = await data.json();
   if (data.ok) {
+    sessionStorage.setItem("userId",response.data.userId)
+    // const id =sessionStorage.getItem("userId")
     alert("Successfully LogIn!")
     window.location.href = "./dashboard.html";
   } else {
-    const errorMessage = response.data;
+    const errorMessage = response.data.message;
     alert("error: " + errorMessage)
   }
-
 })

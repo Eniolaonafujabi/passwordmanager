@@ -56,13 +56,13 @@
   gap: 10px;
 }
 
-.securePasswordForm{
+.secureAddressForm{
   justify-content: space-between;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.securePasswordForm input {
+.secureAddressForm input {
   width: 30vw;
   height: 4vh;
   border-radius: 10px;
@@ -78,7 +78,7 @@
   margin: auto;
   gap: 2px;
 }
-.securePasswordForm button{
+.secureAddressForm button{
   width: 20vw;
   border-radius: 10px;
   cursor: pointer;
