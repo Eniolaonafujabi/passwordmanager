@@ -1,5 +1,27 @@
+const id = sessionStorage.getItem("userId");
 BASE_URL = "http://localhost:8080/api/user/addAddress";
+BASEURL_LOGOUT = `http://localhost:8080/api/user/logOut/${id}`
 const form = document.querySelector(".secureAddressForm");
+const logOffButton = document.querySelector(".logOutDiv");
+
+logOffButton.addEventListener("click", async (e) => {
+  e.preventDefault();
+  const logoff = await fetch(BASEURL_LOGOUT,{
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    }
+  })
+  const response = await logoff.json();
+  if (logoff.ok) {
+    sessionStorage.removeItem("userId");
+    alert("Successfully LogOut")
+    window.location.href='register.html';
+  } else {
+    const errorMessage = response.logoff;
+    alert("error: " + errorMessage)
+  }
+})
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -44,4 +66,36 @@ form.addEventListener("submit", async (e) => {
 
   const emailValue = document.querySelector(".emailInput").value;
   console.log(emailValue);
+
+  const data = await fetch(BASE_URL, {
+    method: "POST",
+    headers:{
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      userId: id,
+      firstName: firstNameValue,
+      middleName: middleNameValue,
+      lastName: lastNameValue,
+      gender: genderValue,
+      birthday: birthdayValue,
+      company: companyValue,
+      address1:addressValue,
+      address2:address2Value,
+      cityOrTown: cityOrTimeValue,
+      state: stateValue,
+      zipPostalCode: zipPostalCodeValue,
+      country: countryValue,
+      phone: phoneNumberValue,
+      email: emailValue
+    })
+  })
+  const response = await data.json();
+  if(data.ok){
+    alert("Successfully Saved!")
+  }else {
+    const errorMessage = response.data;
+    alert("error: " + errorMessage)
+    console.log(response.data)
+  }
 })

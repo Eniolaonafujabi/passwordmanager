@@ -86,6 +86,9 @@
   height: 10%;
   margin-left: 60px;
 }
-
-
-
+.logOutDiv{
+  width: 10vw;
+  height: 10%;
+  border-radius: 10px;
+  cursor: pointer;
+}
