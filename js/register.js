@@ -19,12 +19,14 @@ form.addEventListener("submit", async (event)  => {
     },
     body: JSON.stringify({email:emailValue, phoneNumber:collectPhoneNumber,password:collectPassword})
   })
-  console.log(data);
+  const response = await data.json();
     if(data.ok){
       alert("Successfully registered!")
       window.location.href = "logInPage.html";
     }else {
-      console.log(data.status)
+      const errorMessage = response.data;
+      alert("error: " + errorMessage)
+      console.log(response.data)
     }
 })
 

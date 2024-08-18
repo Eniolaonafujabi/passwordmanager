@@ -15,12 +15,13 @@ form.addEventListener("submit", async (e) => {
     },
     body: JSON.stringify({email: emailValue, password: passwordValue})
   })
-  console.log(data);
+  const response = await data.json();
   if (data.ok) {
     alert("Successfully LogIn!")
-    // window.location.href = "logInPage.html";
+    window.location.href = "./dashboard.html";
   } else {
-    console.log(data.status)
+    const errorMessage = response.data;
+    alert("error: " + errorMessage)
   }
 
 })
