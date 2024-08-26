@@ -3,8 +3,17 @@ BASE_URL = "http://localhost:8080/api/user/addPassword";
 BASEURL_LOGOUT = `http://localhost:8080/api/user/logOut/${id}`
 const form = document.querySelector(".securePasswordForm");
 const logOffButton = document.querySelector(".logOutDiv");
+const userName = document.querySelector(".userName");
 
-
+userName.innerHTML = '';
+const userNameFromSessionStorage = sessionStorage.getItem("userName")
+const divTag = document.createElement('div');
+divTag.innerHTML = `
+   <hi>
+    Welcome ${userNameFromSessionStorage}
+   </hi>
+`;
+userName.appendChild(divTag);
 
 logOffButton.addEventListener("click", async (e) => {
   e.preventDefault();
@@ -52,7 +61,7 @@ form.addEventListener("submit",async(e) => {
   const response = await data.json();
   if (data.ok) {
     alert("Successfully saved")
-    // window.location.href = "./dashboard.html";
+    window.location.href = "./dashboard.html";
   } else {
     const errorMessage = response.data;
     alert("error: " + errorMessage)

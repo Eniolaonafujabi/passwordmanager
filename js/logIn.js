@@ -17,7 +17,11 @@ form.addEventListener("submit", async (e) => {
   })
   const response = await data.json();
   if (data.ok) {
-    sessionStorage.setItem("userId",response.data.userId)
+    console.log(response.data);
+    sessionStorage.setItem("userName",response.data.userName);
+    console.log(sessionStorage.getItem("userName"));
+    sessionStorage.setItem("userId",response.data.userId);
+    // sessionStorage.setItem("userEmail",response.data.userEmail);
     // const id =sessionStorage.getItem("userId")
     alert("Successfully LogIn!")
     window.location.href = "./dashboard.html";

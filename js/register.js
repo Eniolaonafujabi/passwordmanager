@@ -3,6 +3,10 @@ const form = document.querySelector(".form");
 
 form.addEventListener("submit", async (event)  => {
   event.preventDefault();
+
+  const userNameValue = document.querySelector('.userInput').value;
+  console.log(userNameValue);
+
   const emailValue = document.querySelector('.emailInput').value;
   console.log(emailValue);
 
@@ -17,7 +21,7 @@ form.addEventListener("submit", async (event)  => {
     headers:{
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({email:emailValue, phoneNumber:collectPhoneNumber,password:collectPassword})
+    body: JSON.stringify({username: userNameValue, email:emailValue, phoneNumber:collectPhoneNumber,password:collectPassword})
   })
   const response = await data.json();
     if(data.ok){
